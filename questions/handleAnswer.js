@@ -1,5 +1,5 @@
 import { createSpinner } from "nanospinner";
-import { sleep } from "./util.js";
+import { sleep } from "../utils/index.js";
 
 export async function handleAnswer(isCorrect) {
   const spinner = createSpinner('I wonder if you are correct...').start()

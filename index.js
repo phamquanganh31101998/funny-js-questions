@@ -1,8 +1,8 @@
 #!/home/quanganh/.nvm/versions/node/v16.17.1/bin/node
-import { welcome } from "./welcome.js";
-import { askName } from "./askName.js";
-import { question1 } from "./question.js";
-import { winner } from "./winner.js";
+import { welcome } from "./display/welcome.js";
+import { askName } from "./display/askName.js";
+import { question1 } from "./questions/question.js";
+import { winner } from "./display/winner.js";
 
 async function main() {
   await welcome()

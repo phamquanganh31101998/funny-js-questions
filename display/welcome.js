@@ -1,6 +1,6 @@
 import chalkAnimation from "chalk-animation";
 import chalk from "chalk";
-import { sleep } from "./util.js";
+import { sleep } from "../utils/index.js";
 
 export async function welcome() {
   const rainbowTitle = chalkAnimation.rainbow("Who Wants To Be A Javascript Millionaire? \n");

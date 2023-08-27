@@ -1,0 +1,12 @@
+[
+  {
+    "question": "What is Javascript",
+    "choices": [
+      "A language",
+      "A piece of code",
+      "A name of the dog",
+      "I don't know the answer"
+    ],
+    "correct": "A language"
+  }
+]

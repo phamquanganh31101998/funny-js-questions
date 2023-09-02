@@ -8,6 +8,10 @@ import dotenv from "dotenv";
 // Can use in command like this: node -r dotenv/config index.js
 dotenv.config()
 
+process.on('exit', () => {
+  console.log('Bye bye!')
+})
+
 async function main() {
   try {
     console.log(process.env.NODE_ENV)
@@ -24,8 +28,10 @@ async function main() {
 
     await winner(playerName)
 
+    process.exitCode = 0
   } catch (e) {
     console.error(e)
+    process.exitCode = 1
   }
 }
 

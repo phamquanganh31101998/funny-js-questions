@@ -3,15 +3,30 @@ import { welcome } from "./display/welcome.js";
 import { askName } from "./display/askName.js";
 import { question1 } from "./questions/question.js";
 import { winner } from "./display/winner.js";
+import dotenv from "dotenv";
+
+// Can use in command like this: node -r dotenv/config index.js
+dotenv.config()
 
 async function main() {
-  await welcome()
+  try {
+    console.log(process.env.NODE_ENV)
 
-  const playerName = await askName()
+    console.log(process.env.PORT)
 
-  await question1()
+    console.log("--------------------------------")
 
-  await winner(playerName)
+    await welcome()
+
+    const playerName = await askName()
+
+    await question1()
+
+    await winner(playerName)
+
+  } catch (e) {
+    console.error(e)
+  }
 }
 
 await main()

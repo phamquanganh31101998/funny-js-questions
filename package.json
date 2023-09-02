@@ -1,15 +1,15 @@
 {
-  "name": "cli-tool",
+  "name": "funny-js-questions",
   "version": "1.0.0",
-  "description": "",
+  "description": "For those who want to be Javascript millionaires!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "type": "module",
-  "keywords": [],
-  "author": "",
+  "keywords": ["js", "questions"],
+  "author": "Quang Anh",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.3.0",

@@ -8,7 +8,10 @@
     "start": "node index.js"
   },
   "type": "module",
-  "keywords": ["js", "questions"],
+  "keywords": [
+    "js",
+    "questions"
+  ],
   "author": "Quang Anh",
   "license": "ISC",
   "dependencies": {
@@ -18,6 +21,7 @@
     "figlet": "^1.6.0",
     "gradient-string": "^2.0.2",
     "inquirer": "^9.2.10",
-    "nanospinner": "^1.1.0"
+    "nanospinner": "^1.1.0",
+    "prompts": "^2.4.2"
   }
 }

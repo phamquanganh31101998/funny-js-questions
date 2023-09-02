@@ -15,17 +15,12 @@ process.on('exit', () => {
 async function main() {
   try {
     console.log(process.env.NODE_ENV)
-
     console.log(process.env.PORT)
-
     console.log("--------------------------------")
 
     await welcome()
-
     const playerName = await askName()
-
     await question1()
-
     await winner(playerName)
 
     process.exitCode = 0

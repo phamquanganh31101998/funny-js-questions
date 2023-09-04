@@ -23,5 +23,8 @@
     "inquirer": "^9.2.10",
     "nanospinner": "^1.1.0",
     "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
